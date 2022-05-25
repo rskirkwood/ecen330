@@ -28,7 +28,7 @@ For questions, contact Brad Hutchings or Jeff Goeders, https://ece.byu.edu/
 ////////////////////////////////////////////////////////////////////////////////
 // Uncomment one of the following lines to run Milestone 1 or 2      ///////////
 ////////////////////////////////////////////////////////////////////////////////
-#define RUN_PROGRAM MILESTONE_1
+// #define RUN_PROGRAM MILESTONE_1
 // #define RUN_PROGRAM MILESTONE_2
 
 // If nothing is uncommented above, run milestone 2

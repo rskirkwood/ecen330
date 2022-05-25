@@ -26,6 +26,7 @@
 #define FORMAT_HOURS "%2hd"
 #define FORMAT_MINS_AND_SECONDS "%02hd"
 #define DOUBLE_DIGIT 10
+#define CHARACTER_ARRAY_SIZE 3
 
 // Text positioning constants
 #define CENTER_WIDTH DISPLAY_WIDTH / 2
@@ -105,13 +106,14 @@ uint8_t old_minutes = 0;
 uint8_t old_seconds = 0;
 
 // Character Arrays to hold the time variables as strings
-char charHr[8];
-char charMin[8];
-char charSec[8];
+char charHr[CHARACTER_ARRAY_SIZE];
+char charMin[CHARACTER_ARRAY_SIZE];
+char charSec[CHARACTER_ARRAY_SIZE];
 /**************END OF GLOBAL VARIABLES******************/
 
 /*************BEGIN OF HELPER FUNCTIONS***************/
 
+// Function used to increment the hours and check if it has reached it's maximum value
 void incHours() {
   hours++;
 
@@ -120,6 +122,7 @@ void incHours() {
   }
 }
 
+// Function used to decrement the hours and check if it has reached it's minimum value
 void decHours() {
   if (hours == MIN_HOURS) {
     hours = MAX_HOURS;
@@ -127,6 +130,7 @@ void decHours() {
     hours--;
 }
 
+// Function used to increment the minutes and check if it has reached it's maximum value
 void incMins() {
   minutes++;
 
@@ -135,6 +139,7 @@ void incMins() {
   }
 }
 
+// Function used to decrement the minutes and check if it has reached it's minimum value
 void decMins() {
   if (minutes == MIN_TIME) {
     minutes = MAX_MINS_AND_SECONDS;
@@ -142,6 +147,7 @@ void decMins() {
     minutes--;
 }
 
+// Function used to increment the seconds and check if it has reached it's maximum value
 void incSec() {
   seconds++;
 
@@ -150,6 +156,8 @@ void incSec() {
   }
 }
 
+
+// Function used to decrement the seconds and check if it has reached it's minimum value
 void decSec() {
   if (seconds == MIN_TIME) {
     seconds = MAX_MINS_AND_SECONDS;
