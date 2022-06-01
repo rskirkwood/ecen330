@@ -1,0 +1,12 @@
+make --dry-run --always-make --keep-going --print-directory
+make: Entering directory '/home/rskirkwood/ecen330'
+echo "Checking that required programs are installed..."
+for exe in make qtconfig clang-format zip cmake ; do \
+	command -v $exe >/dev/null || (echo "ERROR: $exe is not installed."; exit 1);\
+done
+for exe in arm-none-eabi-gcc openocd; do \
+	command -v $exe >/dev/null || (echo "WARNING: $exe is not installed. This is required if you want to run on a physical board.");\
+done
+echo "Done."
+make: Leaving directory '/home/rskirkwood/ecen330'
+ 
