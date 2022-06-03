@@ -29,6 +29,8 @@ For questions, contact Brad Hutchings or Jeff Goeders, https://ece.byu.edu/
 
 #define DISPLAY_WIDTH 320
 #define DISPLAY_HEIGHT 240
+#define DISPLAY_CENTER_WIDTH 160
+#define DISPLAY_CENTER_HEIGHT 120
 
 #define DISPLAY_BLACK 0x0000
 #define DISPLAY_BLUE 0x031F

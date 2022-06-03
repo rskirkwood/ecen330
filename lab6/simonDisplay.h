@@ -16,8 +16,8 @@ For questions, contact Brad Hutchings or Jeff Goeders, https://ece.byu.edu/
 #include <stdint.h>
 
 // Width, height of the simon "buttons"
-#define SIMON_DISPLAY_BUTTON_WIDTH 60
-#define SIMON_DISPLAY_BUTTON_HEIGHT 60
+#define SIMON_DISPLAY_BUTTON_WIDTH 80
+#define SIMON_DISPLAY_BUTTON_HEIGHT 80
 
 // WIdth, height of the simon "squares.
 // Note that the video shows the squares as larger but you
