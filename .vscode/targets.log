@@ -6,7 +6,7 @@ make all --print-data-base --no-builtin-variables --no-builtin-rules --question
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Thu Jun  2 19:08:29 2022
+# Make data base, printed on Mon Jun 13 09:25:48 2022
 
 # Variables
 
@@ -49,13 +49,13 @@ VSCODE_CWD = /mnt/c/Users/rskir/AppData/Local/Programs/Microsoft VS Code
 # default
 MAKE_HOST := x86_64-pc-linux-gnu
 # environment
-PATH = /home/rskirkwood/.vscode-server/bin/c3511e6c69bb39013c4a4b7b9566ec1ca73fc4d5/bin/remote-cli:/home/rskirkwood/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/Program Files/MATLAB/R2022a/bin:/mnt/c/Program Files/dotnet/:/mnt/c/Program Files/usbipd-win/:/mnt/c/Program Files (x86)/UHD/bin:/mnt/c/Program Files/PowerShell/7/:/mnt/c/Users/rskir/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/rskir/AppData/Local/Programs/Microsoft VS Code/bin:/snap/bin
+PATH = /home/rskirkwood/.vscode-server/bin/4af164ea3a06f701fe3e89a2bcbb421d2026b68f/bin/remote-cli:/home/rskirkwood/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/Program Files/MATLAB/R2022a/bin:/mnt/c/Program Files/dotnet/:/mnt/c/Program Files/usbipd-win/:/mnt/c/Program Files (x86)/UHD/bin:/mnt/c/Program Files/PowerShell/7/:/mnt/c/Users/rskir/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/rskir/AppData/Local/Programs/Microsoft VS Code/bin:/snap/bin
 # environment
 XDG_RUNTIME_DIR = /mnt/wslg/runtime-dir
 # environment
 VSCODE_LOG_STACK = false
 # environment
-VSCODE_IPC_HOOK_CLI = /mnt/wslg/runtime-dir/vscode-ipc-ebae91ed-b28b-4d0b-8ee2-30b5c92147c3.sock
+VSCODE_IPC_HOOK_CLI = /mnt/wslg/runtime-dir/vscode-ipc-ff9ce1f4-6e37-479f-8ed8-007535359800.sock
 # default
 .FEATURES := target-specific order-only second-expansion else-if shortest-stem undefine oneshell archives jobserver output-sync check-symlink load
 # environment
@@ -156,8 +156,10 @@ TERM = xterm-256color
 VSCODE_EXTHOST_WILL_SEND_SOCKET = true
 # environment
 WSL_DISTRO_NAME = Ubuntu-20.04
+# environment
+MOTD_SHOWN = update-motd
 # variable set hash-table stats:
-# Load=73/1024=7%, Rehash=0, Collisions=4/98=4%
+# Load=74/1024=7%, Rehash=0, Collisions=4/99=4%
 
 # Pattern-specific Variable Values
 
@@ -165,9 +167,9 @@ WSL_DISTRO_NAME = Ubuntu-20.04
 
 # Directories
 
-# . (device 2080, inode 101016): 30 files, no impossibilities.
+# . (device 2080, inode 101016): 32 files, no impossibilities.
 
-# 30 files, no impossibilities in 1 directories.
+# 32 files, no impossibilities in 1 directories.
 
 # Implicit Rules
 
@@ -243,13 +245,13 @@ install:
 
 # No general ('VPATH' variable) search path.
 
-# strcache buffers: 1 (0) / strings = 38 / storage = 329 B / avg = 8 B
-# current buf: size = 8162 B / used = 329 B / count = 38 / avg = 8 B
+# strcache buffers: 1 (0) / strings = 40 / storage = 355 B / avg = 8 B
+# current buf: size = 8162 B / used = 355 B / count = 40 / avg = 8 B
 
-# strcache performance: lookups = 46 / hit rate = 17%
+# strcache performance: lookups = 48 / hit rate = 16%
 # hash-table stats:
-# Load=38/8192=0%, Rehash=0, Collisions=1/46=2%
-# Finished Make data base on Thu Jun  2 19:08:29 2022
+# Load=40/8192=0%, Rehash=0, Collisions=1/48=2%
+# Finished Make data base on Mon Jun 13 09:25:48 2022
 
  
 make: *** No rule to make target 'all'.  Stop.

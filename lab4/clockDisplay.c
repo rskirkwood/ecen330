@@ -113,7 +113,8 @@ char charSec[CHARACTER_ARRAY_SIZE];
 
 /*************BEGIN OF HELPER FUNCTIONS***************/
 
-// Function used to increment the hours and check if it has reached it's maximum value
+// Function used to increment the hours and check if it has reached it's maximum
+// value
 void incHours() {
   hours++;
 
@@ -122,7 +123,8 @@ void incHours() {
   }
 }
 
-// Function used to decrement the hours and check if it has reached it's minimum value
+// Function used to decrement the hours and check if it has reached it's minimum
+// value
 void decHours() {
   if (hours == MIN_HOURS) {
     hours = MAX_HOURS;
@@ -130,7 +132,8 @@ void decHours() {
     hours--;
 }
 
-// Function used to increment the minutes and check if it has reached it's maximum value
+// Function used to increment the minutes and check if it has reached it's
+// maximum value
 void incMins() {
   minutes++;
 
@@ -139,7 +142,8 @@ void incMins() {
   }
 }
 
-// Function used to decrement the minutes and check if it has reached it's minimum value
+// Function used to decrement the minutes and check if it has reached it's
+// minimum value
 void decMins() {
   if (minutes == MIN_TIME) {
     minutes = MAX_MINS_AND_SECONDS;
@@ -147,7 +151,8 @@ void decMins() {
     minutes--;
 }
 
-// Function used to increment the seconds and check if it has reached it's maximum value
+// Function used to increment the seconds and check if it has reached it's
+// maximum value
 void incSec() {
   seconds++;
 
@@ -156,8 +161,8 @@ void incSec() {
   }
 }
 
-
-// Function used to decrement the seconds and check if it has reached it's minimum value
+// Function used to decrement the seconds and check if it has reached it's
+// minimum value
 void decSec() {
   if (seconds == MIN_TIME) {
     seconds = MAX_MINS_AND_SECONDS;

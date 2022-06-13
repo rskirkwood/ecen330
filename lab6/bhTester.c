@@ -24,7 +24,7 @@ typedef enum {
 bhTester_state_t bhTester_currentState;
 uint16_t touchCount;
 
-#define MAX_TOUCH_COUNT 20
+#define MAX_TOUCH_COUNT 10
 #define DISPLAY_X_CENTER (DISPLAY_WIDTH / 2)
 #define DISPLAY_Y_CENTER (DISPLAY_HEIGHT / 2)
 #define TEXT_SIZE 3
@@ -65,6 +65,7 @@ void bhTester_tick() {
       if (touchCount < MAX_TOUCH_COUNT) {
         bhTester_currentState = bhTester_init_st;
       } else {
+        simonDisplay_eraseAllButtons();
         bhTester_currentState = bhTester_done_st;
         printf("Terminating test after %d touches.\n", MAX_TOUCH_COUNT);
       }
