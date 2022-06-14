@@ -31,6 +31,12 @@ For questions, contact Brad Hutchings or Jeff Goeders, https://ece.byu.edu/
 #define TEXT_BTN2 "BTN2"
 #define TEXT_BTN3 "BTN3"
 
+// Number to define button
+#define BTN0 0
+#define BTN1 1
+#define BTN2 2
+#define BTN3 3
+
 // display x coordinates for each button
 #define BTN3_BEG_X 0
 #define BTN2_BEG_X DISPLAY_WIDTH / 4 + 1
@@ -60,6 +66,15 @@ int32_t buttons_init() {
 // Returns the current value of all 4 buttons as the lower 4 bits of the
 // returned value. bit3 = BTN3, bit2 = BTN2, bit1 = BTN1, bit0 = BTN0.
 int32_t buttons_read() { return Xil_In32(XPAR_PUSH_BUTTONS_BASEADDR); }
+
+uint8_t get_button() {
+  uint32_t btn = buttons_read();
+  if ((btn & BUTTONS_BTN0_MASK) == BUTTONS_BTN0_MASK) return BTN0;
+  else if ((btn & BUTTONS_BTN1_MASK) == BUTTONS_BTN1_MASK) return BTN1;
+  else if ((btn & BUTTONS_BTN2_MASK) == BUTTONS_BTN2_MASK) return BTN2;
+  else if ((btn & BUTTONS_BTN3_MASK) == BUTTONS_BTN3_MASK) return BTN3;
+  else return 5;
+}
 
 // Runs a test of the buttons. As you push the buttons, graphics and messages
 // will be written to the LCD panel. The test will until all 4 pushbuttons are

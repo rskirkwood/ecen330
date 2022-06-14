@@ -34,4 +34,7 @@ int32_t buttons_read();
 // simultaneously pressed.
 void buttons_runTest();
 
+// Function used by other files to determin the button that was pressed
+uint8_t get_button();
+
 #endif /* BUTTONS_H */
